@@ -1,0 +1,195 @@
+/**laptop**/
+@media (min-device-width: 901px) {
+  .title {
+    color: #c1c4c2;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 500;
+  }
+}
+
+/**tablette**/
+@media (min-width: 601px) and (max-width: 900px) {
+  .title {
+    color: #c1c4c2;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 500;
+  }
+}
+
+/**phone**/
+@media (max-device-width: 600px) {
+  .title {
+    font-size: x-large;
+    color: #c1c4c2;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
+/**********************WHERE************************************/
+/**laptop**/
+@media (min-device-width: 901px) {
+  .où {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+}
+
+/**tablette**/
+@media (min-width: 601px) and (max-width: 900px) {
+  .où {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+}
+
+/**phone**/
+@media (max-device-width: 600px) {
+  .où {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+}
+
+/********************************CARTE**********************************/
+
+/**laptop**/
+@media (min-device-width: 901px) {
+  .carte {
+    width: 20em;
+    height: auto;
+    transition-duration: 0.5s;
+  }
+}
+
+/**tablette**/
+@media (min-width: 601px) and (max-width: 900px) {
+  .carte {
+    width: 20em;
+    height: auto;
+    transition-duration: 0.5s;
+  }
+}
+
+/**phone**/
+@media (max-device-width: 600px) {
+  .carte {
+    width: 15em;
+  }
+}
+@media (max-device-width: 320px) {
+  .carte {
+    width: 12em;
+    margin-left: 1em;
+  }
+}
+
+.carte:hover {
+  transform: scale(1.05);
+}
+
+/********************************LIEUX**********************************/
+
+/**laptop**/
+@media (min-device-width: 901px) {
+  .villes-dpt {
+    width: 20em;
+    margin-left: 4em;
+  }
+}
+
+/**tablette**/
+@media (min-width: 601px) and (max-width: 900px) {
+  .villes-dpt {
+    width: 20em;
+    margin-left: 4em;
+  }
+}
+
+/**phone**/
+@media (max-device-width: 600px) {
+  .villes-dpt {
+    margin-left: 2em;
+    width: 10rem;
+  }
+}
+
+@media (max-device-width: 320px) {
+  .villes-dpt {
+    margin-left: 1em;
+    width: 10rem;
+  }
+}
+
+.departements {
+  color: #e6ae1d;
+  font-weight: 700;
+  font-size: large;
+}
+
+.villes {
+  color: #c1c4c2;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .villes {
+    font-size: x-small;
+    line-height: 1.3em;
+    margin-top: -1em;
+  }
+}
+
+.quand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.horaires,
+.disponible {
+  color: #e6ae1d;
+  font-weight: 700;
+  font-size: 1.6em;
+  transition-duration: 0.5s;
+}
+
+.horaires:hover,
+.disponible:hover {
+  color: #e6cb87;
+}
+
+.disponible {
+  font-size: 2em;
+  margin-top: -0.3em;
+}
+
+/**phone**/
+@media (max-device-width: 475px) {
+  .horaires {
+    font-size: 1.5em;
+  }
+  .disponible {
+    font-size: 1.9em;
+  }
+}
+
+@media (max-device-width: 320px) {
+  .horaires {
+    font-size: 1.3em;
+  }
+  .disponible {
+    font-size: 1.6em;
+  }
+}

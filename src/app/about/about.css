@@ -1,0 +1,21 @@
+.about {
+  background-color: #2b313c;
+}
+
+.about-title {
+  color: #2d93de;
+  padding-top: 1em;
+  text-align: center;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .about-title {
+    font-size: 1.8em;
+  }
+}
+
+.bold {
+  font-weight: 800;
+}

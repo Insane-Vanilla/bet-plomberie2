@@ -1,0 +1,58 @@
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()" class="formulaire">
+  <div class="form-list">
+    <div class="form-item">
+      <label class="label" for="name">Nom*&nbsp;</label>
+      <input
+        class="input"
+        id="name"
+        type="text"
+        name="user_name"
+        formControlName="name"
+        [class.is-invalid]="isInvalidAndTouchedOrDirty(formGroup.controls.name)"
+      />
+      <div class="error-container">
+        @if (isInvalidAndTouchedOrDirty(formGroup.controls.name)) {
+          <small class="text-danger">
+            @if (formGroup.controls.name.hasError('required')) {
+              <ng-container> Le nom est requis </ng-container>
+            }
+          </small>
+        }
+      </div>
+    </div>
+    <div class="form-item">
+      <label class="label" for="phone">Téléphone*&nbsp;</label>
+      <input
+        class="input"
+        id="phone"
+        type="text"
+        name="user_phone"
+        formControlName="phone"
+        [class.is-invalid]="isInvalidAndTouchedOrDirty(formGroup.controls.phone)"
+      />
+      <div class="error-container">
+        @if (isInvalidAndTouchedOrDirty(formGroup.controls.phone)) {
+          <small class="text-danger">
+            @if (formGroup.controls.phone.hasError('required')) {
+              <ng-container> Le numéro de téléphone est requis </ng-container>
+            }
+          </small>
+        }
+      </div>
+    </div>
+    <div class="form-item">
+      <label class="label" for="mail">E-mail&nbsp;</label>
+      <input class="input" type="email" id="mail" name="user_mail" formControlName="email" />
+    </div>
+    <div class="form-item">
+      <label class="label" for="message">Message&nbsp;</label>
+      <textarea
+        class="message"
+        id="message"
+        name="user_message"
+        formControlName="message"
+      ></textarea>
+    </div>
+  </div>
+  <button type="submit" class="send-button">ENVOYER</button>
+</form>
